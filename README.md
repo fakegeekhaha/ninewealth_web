@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/Seedstars/django-react-redux-base.svg?branch=master)](https://travis-ci.org/Seedstars/django-react-redux-base)
 
-# Django React/Redux Base Project
+# NineWealth Web: Django React/Redux Base Project
 
 This repository includes a boilerplate project used for all Seedstars Labs applications. It uses Django as backend and React as frontend.
 
@@ -14,7 +14,7 @@ We build on the shoulders of giants with the following technologies:
 * [Webpack](http://webpack.github.io) for bundling
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
 * [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
-* [Redux](https://github.com/reactjs/redux) Predictable state container for JavaScript apps 
+* [Redux](https://github.com/reactjs/redux) Predictable state container for JavaScript apps
 * [Redux Dev Tools](https://github.com/gaearon/redux-devtools) DevTools for Redux with hot reloading, action replay, and customizable UI. Watch [Dan Abramov's talk](https://www.youtube.com/watch?v=xsSnOQynTHs)
 * [Redux Thunk](https://github.com/gaearon/redux-thunk) Thunk middleware for Redux - used in async actions
 * [React Router Redux](https://github.com/reactjs/react-router-redux) Ruthlessly simple bindings to keep react-router and redux in sync
@@ -48,6 +48,19 @@ We build on the shoulders of giants with the following technologies:
 
 * If the command line starts with $, the command should run with user privileges
 * If the command line starts with #, the command should run with root privileges
+
+
+## NodeJS
+
+* Ubuntu install Node.js 6.x: [NVM](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04#how-to-install-using-nvm)
+* `$ nvm install 6.11.5`
+* `$ nvm use 6.11.5`
+* `$ nvm alias default 6.11.5`
+
+
+## Python3
+
+* Ubuntu install Python3: [Python3](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-16-04-server)
 
 
 ## Retrieve code
@@ -96,7 +109,7 @@ There are commands you need to compile javascript and run project. Ideally `yarn
 * `$ python manage.py loaddata fixtures.json`
 * `$ python manage.py runserver`
 
-Then open your browser the page: http://localhost:8000/ If all goes ok you should see a React single page app. 
+Then open your browser the page: http://localhost:8000/ If all goes ok you should see a React single page app.
 
 
 ### Running DOCKER
@@ -128,7 +141,7 @@ The database can be accessed @localhost:5433
 
 ## Accessing Website
 
-The project has CORS enabled and the URL is hard-coded in javascript to http://localhost:8000 
+The project has CORS enabled and the URL is hard-coded in javascript to http://localhost:8000
 For login to work you will to use this URL in your browser.
 
 
@@ -159,9 +172,9 @@ Backend (django/python static analysis)
 
 ## Deployment in Production
 
-We deploy all our production code using Kubernetes. Explaining how to do deployments is beyond the scope of this boilerplate. 
+We deploy all our production code using Kubernetes. Explaining how to do deployments is beyond the scope of this boilerplate.
 
-Here's a great article from digital ocean on how to deploy django project in a VM: https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04 
+Here's a great article from digital ocean on how to deploy django project in a VM: https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04
 
 
 
