@@ -63,10 +63,8 @@ We build on the shoulders of giants with the following technologies:
 * Ubuntu install Python3: [Python3](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-an-ubuntu-16-04-server)
 
 
-## Retrieve code
+## Initialization
 
-* `$ git clone https://github.com/seedstars/django-react-redux-base.git`
-* `$ cd django-react-redux-base`
 * `$ git submodule init`
 * `$ git submodule update`
 * `$ ./scripts/get_static_validation.sh`
