@@ -132,7 +132,7 @@ Stop Docker development server and remove containers, networks, volumes, and ima
 You can access shell in a container
 
 * `$ docker ps  # get the name from the list of running containers`
-* `$ docker exec -i -t ninewealth_webbase_frontend_1 /bin/bash`
+* `$ docker exec -i -t ninewealth_web_frontend_1 /bin/bash`
 
 The database can be accessed @localhost:5433
 
