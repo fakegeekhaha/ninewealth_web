@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Seedstars/django-react-redux-base.svg?branch=master)](https://travis-ci.org/Seedstars/django-react-redux-base)
+[![Build Status](https://travis-ci.org/yimo24/ninewealth_web.svg?branch=master)](https://travis-ci.org/yimo24/ninewealth_web)
 
 # NineWealth Web: Django React/Redux Base Project
 
