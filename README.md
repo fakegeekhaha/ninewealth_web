@@ -130,7 +130,8 @@ Stop Docker development server and remove containers, networks, volumes, and ima
 You can access shell in a container
 
 * `$ docker ps  # get the name from the list of running containers`
-* `$ docker exec -i -t ninewealth_web_frontend_1 /bin/bash`
+* `$ docker exec -i -t ninewealthweb_frontend_1 /bin/bash`
+* `$ docker exec -i -t ninewealthweb_backend_1 /bin/bash`
 
 The database can be accessed @localhost:5433
 
@@ -149,11 +150,13 @@ To make sure the code respects all coding guidelines you should run the statics 
 
 Frontend (javascript tests)
 
-* `$ ./scripts/test_local_frontend.sh`
+* Access frontend container: `$ docker exec -i -t ninewealthweb_frontend_1 /bin/bash`
+* Run script: `$ ./scripts/test_local_frontend.sh`
 
 Backend (django/python tests)
 
-* `$ ./scripts/test_local_backend.sh`
+* Access backend container: `$ docker exec -i -t ninewealthweb_backend_1 /bin/bash`
+* Run script: `$ ./scripts/test_local_backend.sh`
 
 Please take into account that test_local_backend.sh runs py.test with `--nomigrations --reuse-db` flags to allow it be performant. Any time you add a migration please remove those flags next time you run the script.
 
@@ -162,11 +165,13 @@ Please take into account that test_local_backend.sh runs py.test with `--nomigra
 
 Frontend (javascript static analysis)
 
-* `$ ./scripts/static_validate_frontend.sh`
+* Access frontend container: `$ docker exec -i -t ninewealthweb_frontend_1 /bin/bash`
+* Run script: `$ ./scripts/static_validate_frontend.sh`
 
 Backend (django/python static analysis)
 
-* `$ ./scripts/static_validate_backend.sh`
+* Access backend container: `$ docker exec -i -t ninewealthweb_backend_1 /bin/bash`
+* Run script: `$ ./scripts/static_validate_backend.sh`
 
 ## Deployment in Production
 
